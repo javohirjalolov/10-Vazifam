@@ -1,0 +1,157 @@
+.hero{
+  &__container{
+    max-width: 1280px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 136px;
+  }
+  
+  &__top-information{
+    margin: 0;
+    padding: 0;
+    background-image: url("./../images/cofe-one.png");
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 136px;
+    padding: 117px 702px 116px 85px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    &__top-information{
+      background-image: url(./../images/cofe-one@2x.png);
+    }
+  }
+  
+  
+  &__top-heading {
+    margin: 0;
+    padding: 0;
+    min-width: 493px;
+    height: auto;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: $cream; 
+  }
+  
+  &__top-text {
+    margin: 0;
+    padding: 0;
+    min-width: 435px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $cream;
+    mix-blend-mode: normal;
+    opacity: 0.8; 
+    margin-bottom: 56px;
+    margin-top: 32px;
+  }
+  
+  &__top-button {
+    margin: 0;
+    padding: 0;
+    padding: 15px 31px;
+    background: $dark_cyan;
+    border-radius: 6px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: $cream;  
+    border: none; 
+    max-width: 493px;
+    min-width: 217px;
+    
+    &:hover{
+      background-color: $button;
+    }
+  }
+}
+
+@media only screen and (max-width:900px){
+  .hero {
+    margin-bottom: 144px;
+    
+    // .hero__top-heading
+
+    &__top-information{
+      padding: 104px 233px 104px 58px;
+    }
+    
+    &__top-heading {
+      min-width: 329px;
+      font-size: 48px;
+      line-height: 48px;
+    }
+    
+    // .hero__top-text
+    
+    &__top-text {
+      min-width: 388px;
+      width: 100%;
+      font-size: 15px;
+      margin-bottom: 40px;
+      margin-top: 24px;
+    }
+    
+    // .hero__top-button
+    
+    &__top-button {
+      max-width: 398px;
+    }
+  }
+}
+
+@media only screen and (max-width:500px){
+  .hero {
+    &__container{
+      margin-bottom: 120px;
+    }
+    
+    // .hero__top-heading
+
+    &__top-information{
+      padding: 100px 24px 99px 34px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    &__top-heading {
+      font-size: 40px;
+      line-height: 40px;
+      min-width: 279px;
+    }
+    
+    // .hero__top-text
+    
+    &__top-text {
+      min-width: 279px;
+      width: 100%;
+      font-size: 15px;
+      margin-bottom: 40px;
+      margin-top: 24px;
+    }
+    
+  }
+}
+

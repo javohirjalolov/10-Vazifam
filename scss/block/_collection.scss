@@ -1,0 +1,265 @@
+.collection {
+
+  // .collection__container
+
+  &__container {
+    max-width: 1111px;
+    width: 100%;
+    background-image: url(./../../images/Group13.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 200px;
+    padding-top: 126px;
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    &__top-information{
+      background-image: url(./../../images/Group13@2x.png);
+    }
+  }
+
+  // .collection__list
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .collection__list-item
+
+  &__list-item {
+    max-width: 255px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before{
+      content: "";
+      display: inline-block;
+      max-width: 255px;
+      min-width: 255px;
+      width: 100%;
+      max-height: 193px;
+      min-height: 193px;
+      height: 100%;
+      margin-bottom: 71px;
+    }
+  }
+
+
+  &__list-item:nth-child(1)::before{
+    background-image:url("./../images/kopi1copy.png");
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      background-image:url("./../images/kopi1copy@2x.png");
+    }  
+  }
+  &__list-item:nth-child(2)::before{
+    background-image:url("./../images/kopi1copy.png");
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      background-image:url("./../images/kopi1copy@2x.png");
+    }  
+  }
+  &__list-item:nth-child(3)::before{
+    background-image:url("./../images/kopi1copy.png");
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      background-image:url("./../images/kopi1copy@2x.png");
+    }  
+  }
+  &__list-item:nth-child(4)::before{
+    background-image:url("./../images/kopi1copy.png");
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      background-image:url("./../images/kopi1copy@2x.png");
+    }  
+  }
+
+  // .collection__item-heading
+
+  &__item-heading {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: $dark_grey;
+    margin-bottom: 24px;
+  }
+
+  // .collection__item-text
+
+  &__item-text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: $dark_grey;
+    max-width: 255px;
+    width: 100%;  
+  }
+}
+
+@media only screen and (max-width:900px){
+  .collection {
+
+		// .collection__container
+
+		&__container {
+      margin-bottom: 144px;
+      padding-top: 72px;
+		}
+
+		// .collection__list
+
+		&__list {
+      flex-direction: column;
+		}
+
+		// .collection__list-item
+
+		&__list-item {
+      flex-direction: row;
+      align-items: center;
+      max-width: 573px;
+      margin-bottom: 32px;
+
+      &::before{
+        margin: 0;
+        margin-right: 35px;
+      }
+		}
+
+    &__item-information{
+      max-width: 282px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+		// .collection__item-heading
+
+		&__item-heading {
+      max-width: 282px;
+      width: 100%;
+      text-align: start;
+      margin-bottom: 24px;
+		}
+
+		// .collection__item-text
+
+		&__item-text {
+      font-size: 15px;
+      line-height: 25px;
+      text-align: start;
+      color: $dark_grey;
+      max-width: 282px;
+		}
+}
+
+}
+
+@media only screen and (max-width:600px){
+  .collection {
+
+		// .collection__container
+
+		&__container {
+      margin-bottom: 120px;
+      padding-top: 85px;
+		}
+
+		// .collection__list
+
+		&__list {
+      flex-direction: column;
+		}
+
+		// .collection__list-item
+
+		&__list-item {
+      flex-direction: column;
+      align-items: center;
+      max-width: 282px;
+      margin-bottom: 48px;
+		}
+
+		// .collection__item-information
+
+		&__item-information {
+      max-width: 282px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+		}
+
+		// .collection__item-heading
+
+		&__item-heading {
+      max-width: 282px;
+      width: 100%;
+      text-align: center;
+      margin-top: 24px;
+		}
+
+		// .collection__item-text
+
+		&__item-text {
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: $dark_grey;
+      max-width: 282px;
+		}
+  }
+
+}
